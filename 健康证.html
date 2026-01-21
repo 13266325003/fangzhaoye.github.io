@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康证查询</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .header .close-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .header .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .header .sub-title {
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card .card-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        .info-item {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .info-item .label {
+            width: 80px;
+            color: #666;
+        }
+        .info-item .value {
+            color: #333;
+            flex: 1;
+        }
+        .photo {
+            width: 100px;
+            height: 130px;
+            border: 1px solid #eee;
+            float: right;
+            margin-left: 20px;
+            background-color: #fafafa;
+        }
+        .qrcode {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qrcode img {
+            width: 150px;
+            height: 150px;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="close-btn">×</a>
+        <div class="title">健康证查询</div>
+        <div class="sub-title">amr.gd.gov.cn</div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">广东省食品从业人员健康证明</div>
+        <img src="photo.jpg" alt="照片" class="photo">
+        <div class="info-item">
+            <span class="label">姓　　名：</span>
+            <span class="value">方钊烨</span>
+        </div>
+        <div class="info-item">
+            <span class="label">性　　别：</span>
+            <span class="value">男</span>
+        </div>
+        <div class="info-item">
+            <span class="label">身份证号码：</span>
+            <span class="value">450821200509045312</span>
+             <span class="value">（或其他有效证明）</span>
+        </div>
+        <div class="info-item">
+            <span class="label"></span>
+            
+        </div>
+        <div class="info-item">
+            <span class="label">体检单位：</span>
+            <span class="value">佛山市顺德区容桂街道新容奇医院</span>
+        </div>
+        <div class="info-item">
+            <span class="label">体检日期：</span>
+            <span class="value">2025年01月12日（有效期一年）</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">广东省食品从业人员<br>健康证明</div>
+    </div>
+
+    <div class="qrcode">
+        <img src="qrcode.png" alt="二维码">
+    </div>
+
+    <div class="footer">
+        此健康证信息已上报平台
+    </div>
+</body>
+</html>
